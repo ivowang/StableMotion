@@ -1,0 +1,7 @@
+{
+  "my-provider": {
+    "api": "openai-responses",
+    "baseUrl": "https://api.openai.com",
+    "apiKey": "sk-REPLACE_WITH_YOUR_KEY"
+  }
+}

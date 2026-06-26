@@ -29,8 +29,13 @@ node_modules
 # github merge file
 *.orig
 
-#vscode 
+#vscode
 .vscode
+
+# GPT rule-based evaluation (gpt_eval): provider secrets and run outputs
+provider.json
+scores/
+scores_rsc/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

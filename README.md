@@ -23,3 +23,6 @@
 
 ### Training
 Run `cd StableMotion_RSC && sh train.sh`. You may want to change this file to modify the training configurations. The default configuration requires approximately 40 GB of VRAM per card.
+
+## GPT Rule-Based Evaluation
+Each task folder has a `gpt_eval` subfolder with the script used in the paper to score results with a vision LLM (GPT) on a fixed rubric. `StableMotino_SIR/gpt_eval/score_rectangle.py` scores Stitched Image Rectangling (SIR) `(input, output)` pairs, and `StableMotion_RSC/gpt_eval/score_rolling_shutter.py` scores Rolling Shutter Correction (RSC) `[input | Yang | Ours]` triptychs. Both call an OpenAI-Responses-compatible API and emit per-pair scores plus an aggregate `summary.json` (mean/std/95% CI). To run, copy `provider.example.json` to `provider.json` in the relevant folder, add your endpoint/key, then e.g. `cd StableMotino_SIR/gpt_eval && python score_rectangle.py <input_dir> <result_dir>`. See each folder's `README.md` for the full rubric, flags, and outputs.
