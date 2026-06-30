@@ -7,7 +7,7 @@
 
 ## StableMotion for Stitched Image Rectangling (SIR)
 ### Inference
-0. Download the checkpoints of [StableMotion_SIR](https://huggingface.co/ziyiwhat/StableMotion/tree/main/StableMotion_SIR)
+0. Download the checkpoints of [StableMotion_SIR](https://huggingface.co/ivowang/StableMotion/tree/main/StableMotion_SIR)
 1. Run `cd StableMotion_SIR && sh sample.sh`. You may want to change this file to modify the inference configurations.
 2. Run `sh metrics.sh` to evaluate the results.
 
@@ -17,7 +17,7 @@
 
 ## StableMotion for Rolling Shutter Correction (RSC)
 ### Inference
-0. Download the checkpoints of [StableMotion_RSC](https://huggingface.co/ziyiwhat/StableMotion/tree/main/StableMotion_RSC)
+0. Download the checkpoints of [StableMotion_RSC](https://huggingface.co/ivowang/StableMotion/tree/main/StableMotion_RSC)
 1. Run `cd StableMotion_RSC && sh sample.sh`. You may want to change this file to modify the inference configurations.
 2. Run `sh metrics.sh` to evaluate the results.
 
